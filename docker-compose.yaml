@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    environment:
+      EULA: "TRUE"
+    restart: always
+    tty: TRUE
+    stdin_open: TRUE
+    volumes:
+      - type: bind
+        source: ./
+        target: /data
