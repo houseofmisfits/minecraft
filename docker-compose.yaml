@@ -6,11 +6,11 @@ services:
     environment:
       EULA: "TRUE"
     ports:
-      - "35565:35565"
+      - "25565:25565"
     restart: always
     tty: TRUE
     stdin_open: TRUE
     volumes:
       - type: bind
-        source: ./
+        source: ./data
         target: /data
