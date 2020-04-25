@@ -5,6 +5,8 @@ services:
     container_name: minecraft
     environment:
       EULA: "TRUE"
+      MAX_MEMORY: 4G
+      VIEW_DISTANCE: 16
     ports:
       - "25565:25565"
     restart: always
